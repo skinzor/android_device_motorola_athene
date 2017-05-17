@@ -150,6 +150,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
+# Kernel Adiutor
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8952
