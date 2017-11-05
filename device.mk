@@ -126,7 +126,8 @@ PRODUCT_PACKAGES += \
 
 # Extra Packages (prebuilt/apps)
 PRODUCT_PACKAGES += \
-    KernelAdiutor
+    KernelAdiutor \
+    SelinuxModeChanger
 
 # FM
 PRODUCT_PACKAGES += \
