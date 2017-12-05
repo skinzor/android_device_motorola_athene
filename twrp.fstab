@@ -8,6 +8,12 @@
 /misc           emmc      /dev/block/bootdevice/by-name/misc
 /firmware       vfat      /dev/block/bootdevice/by-name/modem
 /persist        ext4      /dev/block/bootdevice/by-name/persist
+/oem            ext4      /dev/block/bootdevice/by-name/oem        flags=display="OEM";backup=1;fsflags=ro,nosuid,nodev
+/dsp            ext4      /dev/block/bootdevice/by-name/dsp        flags=display="DSP";backup=1;fsflags=ro,nosuid,nodev
+/efs1           emmc      /dev/block/bootdevice/by-name/modemst1   flags=display="EFS";backup=1;
+/efs2           emmc      /dev/block/bootdevice/by-name/modemst2   flags=subpartitionof=/efs1
+/fsg            ext4      /dev/block/bootdevice/by-name/fsg        flags=display="FSG";backup=1;fsflags=ro,nosuid,nodev
+/logo           emmc      /dev/block/bootdevice/by-name/logo       flags=display="Boot Logo";backup=1;flashimg=1
 
 /external_sd    auto      /dev/block/mmcblk1p1                     /dev/block/mmcblk1     flags=display="MicroSD Card";storage;wipeingui;removable
 /usb_otg        auto      /dev/block/sda1                          /dev/block/sda         flags=display="USB-OTG";storage;wipeingui;removable
